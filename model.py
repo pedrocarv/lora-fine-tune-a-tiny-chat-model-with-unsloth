@@ -80,8 +80,11 @@ def trainable_fraction(trainable_count, total_count):
     # TODO: return the fraction of parameters that are trainable.
     return trainable_count/total_count
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    """Return a small list of {'instruction', 'response'} dicts for SFT."""
+    # TODO: return a tiny hand-written list of instruction/response example dicts.
+    return [{"instruction": "Explain what a neural network is in simple terms.", "response": "A neural network is a computer model inspired by the brain. It learns patterns from examples and uses those patterns to make predictions or generate outputs."}, {"instruction": "Write a polite email asking to reschedule a meeting.", "response": "Hi, I’m sorry, but I need to reschedule our meeting. Would you be available at another time this week? Thank you for your understanding."}, {"instruction": "Summarize the following sentence: The experiment showed that the new method was faster and more accurate than the previous approach.", "response": "The new method performed better than the old one."}]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
